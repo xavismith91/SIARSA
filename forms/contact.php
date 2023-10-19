@@ -6,7 +6,7 @@
     $correo2 = 'sistemas@ce2000.mx';// correo en donde van a llegar los datos del formulario 
     $telefono = $_POST['telefono'];
     $tiposervicio = $_POST['servicio'];
-    $remitente= "VAETTIR";
+    $remitente= "SIARSA";
     // $asunto=$_POST["subject"];
     $cuerpo="
     <html> 
