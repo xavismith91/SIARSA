@@ -143,7 +143,54 @@
           <div class="col-lg-12">
             <p class="texto-justificado"><h3 class="text-center">¿Dudas y comentarios?</h3></p>
             <p class="texto-justificado"><h3 class="text-center">Llena el formulario y nos comunicaremos a la brevedad</h3></p>
-            <form action="forms/contact.php" method="post" role="form" class="php-email-form">
+            <div class="container-fluid py-5">
+                  <form action="forms/contact.php" method="post" role="form" class="php-email-form">
+                  <div class="row justify-content-center">
+                      <div class="col-lg-7">
+                          <div class="bg-light rounded p-4 p-sm-5 wow fadeInUp" data-wow-delay="0.1s">
+                              <div class="row g-3">
+                                  <div class="col-sm-6">
+                                      <div class="form-floating">
+                                          <input type="text" class="form-control border-0" name="nombre" id="gname" placeholder="Gurdian Name" required>
+                                          <label for="gname">Nombre</label>
+                                      </div>
+                                  </div>
+                                  <div class="col-sm-6">
+                                      <div class="form-floating">
+                                          <input type="email" class="form-control border-0" name="correo" id="gmail" placeholder="Gurdian Email" required>
+                                          <label for="gmail">Correo</label>
+                                      </div>
+                                  </div>
+                                  <div class="col-sm-6">
+                                      <div class="form-floating">
+                                          <input type="text" class="form-control border-0" name="telefono" id="cname" placeholder="Child Name" required>
+                                          <label for="cname">Teléfono</label>
+                                      </div>
+                                  </div>
+                                  <div class="col-sm-6">
+                                      <div class="form-floating">
+                                          <input type="text" class="form-control border-0" name="servicio" id="cage" placeholder="Child Age" required>
+                                          <label for="cage">Tipo de Servicio</label>
+                                      </div>
+                                  </div>
+                                  <div class="col-12">
+                                      <div class="form-floating">
+                                          <textarea class="form-control border-0" name="message" placeholder="Leave a message here" id="message" style="height: 100px"></textarea>
+                                          <label for="message">Mensaje</label>
+                                      </div>
+                                  </div>
+                                  <div class="col-12 text-center">
+                                      <button class="btn btn-primary py-3 px-4" type="submit">Enviar</button>
+                                  </div>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+                  </form>
+              
+          </div>
+            
+            <!-- <form action="forms/contact.php" method="post" role="form" class="php-email-form">
               <div class="row gy-4">
                 <div class="col-lg-6 form-group">
                   <input type="text" name="name" class="form-control" id="name" placeholder="Nombre" required>
@@ -168,7 +215,7 @@
               </div>
               <div class="text-center"><button type="submit">Enviar</button></div>
             </form>
-          </div><!-- End Contact Form -->
+          </div> -->
 
         </div>
 
