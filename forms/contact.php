@@ -6,6 +6,7 @@
     $correo2 = 'sistemas@ce2000.mx';// correo en donde van a llegar los datos del formulario 
     $telefono = $_POST['telefono'];
     $tiposervicio = $_POST['servicio'];
+    $marca = $_POST['marca'];
     $remitente= "SIARSA";
     // $asunto=$_POST["subject"];
     $cuerpo="
@@ -15,6 +16,7 @@
       <h3> Cliente: $nombre</h3>
       <h3> Correo: $correo </h3> 
       <h3> Tipo de Servicio: $tiposervicio </h3>
+      <h3> Marca: $marca </h3>
       <h3> Teléfono de Contacto: $telefono</h3
       <h3> $mensaje </h5>
       <h4>SIARSA 2023</h4>
