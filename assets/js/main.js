@@ -211,20 +211,3 @@ document.addEventListener('DOMContentLoaded', () => {
 
 });
 
-const slider = document.querySelector('.carousel-slider');
-const slides = document.querySelectorAll('.slide');
-
-let currentIndex = 0;
-const totalSlides = slides.length;
-
-function nextSlide() {
-  currentIndex = (currentIndex + 1) % totalSlides;
-  updateSlider();
-}
-
-function updateSlider() {
-  const newTransformValue = -currentIndex * 100 + '%';
-  slider.style.transform = 'translateX(' + newTransformValue + ')';
-}
-
-setInterval(nextSlide, 5000); // Cambia de imagen cada 3 segundos

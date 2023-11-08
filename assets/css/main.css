@@ -2686,17 +2686,3 @@ section {
   text-align: justify;
 
 }
-
-carousel-container {
-  width: 100%;
-  overflow: hidden;
-}
-
-.carousel-slider {
-  display: flex;
-  transition: transform 0.5s ease-in-out;
-}
-
-.slide {
-  min-width: 100%;
-}
