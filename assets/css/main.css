@@ -2686,3 +2686,28 @@ section {
   text-align: justify;
 
 }
+
+
+
+.carousel-container {
+  width: 100%;
+  overflow: hidden;
+}
+
+.carousel-wrapper {
+  display: flex;
+  animation: scroll 50s linear infinite;
+}
+
+.carousel-slide {
+  flex: 0 0 40%; /* Ancho de cada slide */
+}
+
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
