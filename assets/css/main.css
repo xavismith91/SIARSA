@@ -2700,7 +2700,7 @@ section {
 }
 
 .carousel-slide {
-  flex: 0 0 40%; /* Ancho de cada slide */
+  flex: 0 0 50%; /* Ancho de cada slide */
 }
 
 @keyframes scroll {
