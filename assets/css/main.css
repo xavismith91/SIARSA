@@ -2723,3 +2723,22 @@ section {
 
 
 }
+
+
+
+.tarjeta {
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  padding: 20px;
+  text-align: center;
+  margin: 10px;
+}
+
+.icono {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.descripcion {
+  font-size: 16px;
+}
