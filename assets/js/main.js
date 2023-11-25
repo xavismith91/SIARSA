@@ -1,15 +1,8 @@
-/**
-* Template Name: UpConstruction - v1.3.0
-* Template URL: https://bootstrapmade.com/upconstruction-bootstrap-construction-website-template/
-* Author: BootstrapMade.com
-* License: https://bootstrapmade.com/license/
-*/
+
 document.addEventListener('DOMContentLoaded', () => {
   "use strict";
 
-  /**
-   * Preloader
-   */
+  
   const preloader = document.querySelector('#preloader');
   if (preloader) {
     window.addEventListener('load', () => {
@@ -17,9 +10,7 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   }
 
-  /**
-   * Mobile nav toggle
-   */
+
 
   const mobileNavShow = document.querySelector('.mobile-nav-show');
   const mobileNavHide = document.querySelector('.mobile-nav-hide');
@@ -37,9 +28,7 @@ document.addEventListener('DOMContentLoaded', () => {
     mobileNavHide.classList.toggle('d-none');
   }
 
-  /**
-   * Hide mobile nav on same-page/hash links
-   */
+  
   document.querySelectorAll('#navbar a').forEach(navbarlink => {
 
     if (!navbarlink.hash) return;
@@ -55,9 +44,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
   });
 
-  /**
-   * Toggle mobile nav dropdowns
-   */
+ 
   const navDropdowns = document.querySelectorAll('.navbar .dropdown > a');
 
   navDropdowns.forEach(el => {
