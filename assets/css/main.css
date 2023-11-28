@@ -2725,7 +2725,7 @@ section {
 }
 
 
-/* .tarjeta {
+.tarjeta {
   border: 1px solid #ccc;
   border-radius: 8px;
   padding: 20px;
@@ -2740,12 +2740,11 @@ section {
 
 .descripcion {
   font-size: 16px;
-} */
+}
 
 
 
-
-.contenedor {
+/* .contenedor {
   width: 100%;
   max-width: 1200px;
   height: 430px;
@@ -2797,4 +2796,4 @@ section {
   text-decoration: none;
   color: #3498db;   
     
-}
+} */
