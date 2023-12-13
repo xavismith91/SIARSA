@@ -2688,7 +2688,7 @@ section {
 }
 
 .slider{
-  width: 75vw;
+  width: 70vw;
   height: auto;
   margin: auto;
   overflow: hidden;
@@ -2699,7 +2699,7 @@ section {
   display: flex;
   animation: scroll 40s linear infinite;
   -webkit-animation: scroll 40s linear infinite; 
-  width: calc(200px * 14);
+  width: calc(400px * 14);
 }
 
 .slider .slide {
