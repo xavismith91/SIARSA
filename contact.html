@@ -90,8 +90,7 @@ s      </nav>
 
          
           <div class="col-lg-12">
-            <p class="texto-justificado"><h3 class="text-center">¿Dudas y comentarios?</h3></p>
-            <p class="texto-justificado"><h3 class="text-center">¡Contactános hoy mismo!</h3></p>
+            <p class="texto-justificado"><h1 class="text-center">Deja tus datos y nuestro equipo se pondrá en contacto</h2></p>
             <div class="container-fluid py-5">
                   <form action="forms/contact.php" method="post" role="form" >
                   <div class="row justify-content-center">
@@ -113,7 +112,7 @@ s      </nav>
                                   <div class="col-sm-6">
                                       <div class="form-floating">
                                           <input type="text" class="form-control border-0" name="telefono" id="cname" placeholder="Child Name" required>
-                                          <label for="cname">Teléfono</label>
+                                          <label for="cname">Teléfono (10 digitos)</label>
                                       </div>
                                   </div>
                                   <div class="col-sm-6">
@@ -122,12 +121,17 @@ s      </nav>
                                           <label for="cage">Tipo de Servicio</label>
                                       </div>
                                   </div>                            
-                                  <select class="dropdown" name="marca" id="opcion" name="opcion">
+                                  <select class="dropdown col-sm-6" name="marca" id="opcion" name="opcion">
                                       <option value="Mirage">Mirage</option>
                                       <option value="Trane">Trane</option>
                                       <option value="Daikin">Daikin</option>
                                       <option value="York4">York</option>
                                   </select>
+                                  <select class="dropdown col-sm-6" name="equipo" id="opcion" name="opcion">
+                                    <option value="MiniSplit">MiniSplit</option>
+                                    <option value="Chillers">Chillers</option>
+                                    <option value="Divididos">Divididos</option>
+                                </select>
                                   <br>
                                   <div class="col-12">
                                       <div class="form-floating">
