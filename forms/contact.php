@@ -21,7 +21,7 @@
       <h3> Equipo: $equipo </h3>
       <h3> Teléfono de Contacto: $telefono</h3
       <h3> $mensaje </h5>
-      <h4>SIARSA 2023</h4>
+      <script>document.write(new Date().getFullYear())</script>
     </body> 
     </html> 
     ";
