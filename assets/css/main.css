@@ -2829,3 +2829,28 @@ h1 {
 .label {
   color: #020381;
 }
+
+
+#cookie-consent {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+  color: white;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 1000;
+}
+#cookie-consent button {
+  background-color: #0f70b7;
+  border: none;
+  padding: 10px 20px;
+  margin-left: 10px;
+  cursor: pointer;
+  color: white;
+  font-weight: bold;
+}
+

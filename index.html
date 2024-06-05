@@ -532,6 +532,16 @@
       </div>
     </div>
 
+
+
+    <div id="cookie-consent">
+      <p>Este sitio utiliza cookies para mejorar su experiencia. Al continuar navegando, acepta nuestra <a href="politica.html">Política de Privacidad</a> y el uso de cookies.</p>
+      <div>
+          <button id="accept-cookies">Aceptar</button>
+          <button id="decline-cookies">Denegar</button>
+      </div>
+  </div>
+
     <div class="footer-legal text-center position-relative">
       <div class="container">
         <div class="copyright">
@@ -560,6 +570,23 @@
   <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
   <script src="assets/vendor/php-email-form/validate.js"></script>
 
+
+  <script>
+    // Verificar si el usuario ya ha aceptado o denegado las cookies
+    if (localStorage.getItem('cookieConsent') === 'accepted' || localStorage.getItem('cookieConsent') === 'declined') {
+           document.getElementById('cookie-consent').style.display = 'none';
+       }
+
+       document.getElementById('accept-cookies').addEventListener('click', function() {
+           localStorage.setItem('cookieConsent', 'accepted');
+           document.getElementById('cookie-consent').style.display = 'none';
+       });
+
+       document.getElementById('decline-cookies').addEventListener('click', function() {
+           localStorage.setItem('cookieConsent', 'declined');
+           window.location.href = 'https://www.google.com';
+       });
+</script>
  
   <script src="assets/js/main.js"></script>
 
