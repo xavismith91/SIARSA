@@ -1,5 +1,4 @@
 <?php
-
     $nombre =$_POST["nombre"];
     $mensaje=$_POST["message"];
     $correo = $_POST["correo"]; // correo que ingresan en el formulario
@@ -9,7 +8,7 @@
     $equipo = $_POST['equipo'];
     $marca = $_POST['marca'];
     $remitente= "SIARSA";
-    // $asunto=$_POST["subject"];
+    $asunto= 'Cotización Cliente';
     $cuerpo="
     <html> 
     <meta charset='UTF-8'>
@@ -29,8 +28,9 @@
     $sheader=$sheader."X-Mailer:PHP/".phpversion()."\n";
     $sheader=$sheader."Mime-Version: 1.0\n";
     $sheader=$sheader."Content-Type: text/html; charset=utf-8\n";
+    $sheader .= 'Cc: xaviersolano91@gmail.com' . "\r\n";
     if (mail($correo2,$asunto,$cuerpo,$sheader,$mensaje)) {
-      echo '<script>alert("Su Cita ha sido enviada correctamente, espere su confirmación");</script>';
+      echo '<script>alert("Su Mensjae ha sido enviado correctamente, espere su confirmación");</script>';
     }else {
       echo '<script>alert("Verifique su información e intente de nuevo");</script>';
     }
