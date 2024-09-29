@@ -2,7 +2,7 @@
     $nombre =$_POST["nombre"];
     $mensaje=$_POST["message"];
     $correo = $_POST["correo"]; // correo que ingresan en el formulario
-    $correo2 = 'sistemas@ce2000.mx';// correo en donde van a llegar los datos del formulario 
+    $correo2 = 'sistemas@ce2000.mx;xaviersolano91@gmail.com';// correo en donde van a llegar los datos del formulario 
     $telefono = $_POST['telefono'];
     $tiposervicio = $_POST['servicio'];
     $equipo = $_POST['equipo'];
