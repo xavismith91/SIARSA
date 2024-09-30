@@ -2,7 +2,7 @@
     $nombre =$_POST["nombre"];
     $mensaje=$_POST["message"];
     $correo = $_POST["correo"]; // correo que ingresan en el formulario
-    $correo2 = 'sistemas@ce2000.mx';'xaviersolano91@gmail.com';// correo en donde van a llegar los datos del formulario 
+    $correo2 = 'sistemas@ce2000.mx';// correo en donde van a llegar los datos del formulario 
     $telefono = $_POST['telefono'];
     $tiposervicio = $_POST['servicio'];
     $equipo = $_POST['equipo'];
@@ -28,7 +28,9 @@
     $sheader=$sheader."X-Mailer:PHP/".phpversion()."\n";
     $sheader=$sheader."Mime-Version: 1.0\n";
     $sheader=$sheader."Content-Type: text/html; charset=utf-8\n";
-    $sheader .= 'Cc: xaviersolano91@gmail.com' . "\r\n";
+  
+  
+
     if (mail($correo2,$asunto,$cuerpo,$sheader,$mensaje)) {
       echo '<script>alert("Su Mensjae ha sido enviado correctamente, espere su confirmación");</script>';
     }else {
